@@ -33,6 +33,5 @@ async def subcommand(ctx):
 @lightbulb.implements(lightbulb.SlashCommand)
 async def add(ctx):
     await ctx.respond(ctx.options.num1 + ctx.options.num2)
-  
-
+bot.load_extensions_from('./extensions')
 bot.run()
